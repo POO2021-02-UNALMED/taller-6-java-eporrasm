@@ -1,5 +1,6 @@
 package vehiculos;
 
+
 public class Vehiculo {
 	private String placa;
 	private int puertas;
@@ -21,6 +22,8 @@ public class Vehiculo {
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		cantidadVehiculos ++;
+		fabricante.vehiculosVendidos++;
+		fabricante.getPais().vehiculosVendidos++;
 	}
 	public static int getCantidadVehiculos() {
 		return cantidadVehiculos;
